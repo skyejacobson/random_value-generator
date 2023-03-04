@@ -12,8 +12,8 @@ avg_val = '''Your average value here'''
 rand_range = 2 * (avg_val - '''the whole number value of your average value''')
 
 # create a list of random numbers with 2 decimal places
-rand_list = [round(random.uniform('''range''', '''range''' + rand_range), 2) for i in range(num_rows)]
+rand_list = [round(random.uniform('''x''', '''y''' + rand_range), 2) for i in range(num_rows)]
 
 # create a pandas DataFrame from the data and print it
-df = pd.DataFrame(rand_list, columns=['Column 1'])
+df = pd.DataFrame(rand_list, columns=['''name'''])
 print(df)
